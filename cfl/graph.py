@@ -1,3 +1,8 @@
+
+"""
+A graph representation, specifically for the CFL-reachability problem
+"""
+
 from matrix import Matrix
 from pag_matrix import PAG_Matrix
 

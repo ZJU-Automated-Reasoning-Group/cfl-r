@@ -1,3 +1,12 @@
+"""
+A grammar parser and converter, specifically dealing with Extended Backus-Naur Form (EBNF) to Binary Normal Form (BNF) conversion
+
+- Converts EBNF to BNF by introducing new non-terminals
+- Handles special cases like epsilon (ε) productions
+- Converts long productions into binary form (at most two symbols on the right-hand side)
+- Maintains a dictionary of production rules in edge_pair_dict
+"""
+
 import re
 import copy
 
@@ -162,7 +171,7 @@ class Grammar:
             grammar[new_head] = new_grammar[new_head]
         return grammar
                     
-
+  
     def ebnf_bnf_normal_convertor(self, filename):
         production_rules = self.ebnf_file_reader(filename)
         grammar = self.ebnf_grammar_loader(production_rules)
@@ -178,3 +187,4 @@ class Grammar:
             for rule in self.edge_pair_dict[left_variable]:
                 if rule == ['ε']:
                     self.epsilon.append(left_variable)
+    

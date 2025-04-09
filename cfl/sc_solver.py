@@ -1,3 +1,7 @@
+"""
+A solver for SC-reduction, specifically using the DTC-based approach
+"""
+
 from math import pi, sqrt, floor, ceil, log
 from collections import defaultdict
 from copy import deepcopy

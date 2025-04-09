@@ -1,3 +1,7 @@
+"""
+A PAG matrix representation of a graph, specifically for the CFL-reachability problem
+"""
+
 import re
 
 

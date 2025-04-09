@@ -12,7 +12,6 @@ tmp.py
 Result/*
 .DS_Store
 .pytest_cache
-efsmt/.pytest_cache
 *.qdimacs
 venv
 *__pycache__/
